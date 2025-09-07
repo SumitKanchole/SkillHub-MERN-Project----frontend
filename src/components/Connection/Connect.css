@@ -1,0 +1,524 @@
+.connect-page-container {
+    
+    background: linear-gradient(90deg, #2188376e, #cbece9a4);
+    min-height: 100vh;
+}
+
+.connect-header {
+    text-center: true;
+    margin-bottom: 3rem;
+}
+
+.connect-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #198754;
+    margin-bottom: 1rem;
+}
+
+.connect-subtitle {
+    font-size: 1.25rem;
+    color: #6c757d;
+}
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.loading-text {
+    margin-left: 1rem;
+    color: #6c757d;
+}
+
+.empty-state {
+    text-center: true;
+    padding: 3rem 0;
+}
+
+.empty-state-icon {
+    color: #6c757d;
+    margin-bottom: 1.5rem;
+}
+
+.empty-state-title {
+    color: #6c757d;
+}
+
+.empty-state-subtitle {
+    color: #6c757d;
+}
+
+.complete-profile-btn {
+    padding: 0.75rem 3rem;
+}
+
+.user-card {
+    border: none;
+    border-radius: 15px !important;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.user-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+}
+
+.user-card-body {
+    padding: 1.5rem;
+}
+
+.profile-image-container {
+    text-center: true;
+    margin-bottom: 1rem;
+    position: relative;
+    display: inline-block;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #198754;
+}
+
+.online-indicator {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #198754;
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+
+.user-name {
+    text-align: center;
+    font-weight: bold;
+    color: #212529;
+    margin-bottom: 0.5rem;
+}
+
+.user-location {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.location-text {
+    color: #6c757d;
+    font-size: 0.875rem;
+}
+
+.location-icon {
+    margin-right: 0.25rem;
+    color: #dc3545;
+}
+
+.user-bio {
+    margin-bottom: 1rem;
+}
+
+.bio-text {
+    color: #6c757d;
+    font-size: 0.875rem;
+    text-align: center;
+    min-height: 40px;
+}
+
+
+.skills-section {
+    margin-bottom: 1.5rem;
+}
+
+.skill-item {
+    margin-bottom: 0.5rem;
+}
+
+.skill-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.25rem;
+}
+
+.skill-icon {
+    margin-right: 0.5rem;
+    font-size: 14px;
+}
+
+.skill-icon.teach {
+    color: #0d6efd;
+}
+
+.skill-icon.learn {
+    color: #ffc107;
+}
+
+.skill-label {
+    font-weight: 600;
+    color: #212529;
+    font-size: 0.875rem;
+}
+
+.skill-badge {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.875rem;
+    border-radius: 1rem;
+}
+
+.skill-badge.teach {
+    background-color: rgba(13, 110, 253, 0.1);
+    color: #0d6efd;
+}
+
+.skill-badge.learn {
+    background-color: rgba(255, 193, 7, 0.1);
+    color: #ffc107;
+}
+
+.chat-button-container {
+    display: grid;
+}
+
+.chat-button {
+    border-radius: 25px;
+    padding: 0.625rem 1.25rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.chat-button:hover {
+    transform: scale(1.05);
+}
+
+.chat-button:disabled {
+    transform: none;
+}
+
+.chat-button-icon {
+    margin-right: 0.5rem;
+}
+
+.chat-loading-spinner {
+    margin-right: 0.5rem;
+}
+
+.refresh-button {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+
+@media (max-width: 576px) {
+    .connect-title {
+        font-size: 2.5rem;
+    }
+
+    .user-card-body {
+        padding: 1rem;
+    }
+
+    .profile-image {
+        width: 60px;
+        height: 60px;
+    }
+
+    .online-indicator {
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .connect-title {
+        font-size: 3rem;
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.user-card {
+    animation: fadeIn 0.5s ease-out;
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #198754;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #157347;
+}
+ 
+
+
+
+
+
+
+
+
+/* 
+.connect-container {
+    background: linear-gradient(55deg, rgba(0, 128, 0, 0.377), rgba(255, 255, 255, 0.562));
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 100px;
+    justify-content: center;
+}
+
+.user-card {
+    background: #f2f9f2;
+    border-radius: 12px;
+    padding: 34px 20px;
+    text-align: center;
+    width: 280px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.384);
+}
+
+
+.profile-container {
+    overflow: visible;
+  
+    display: inline-block;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 3px solid rgb(24, 209, 0);
+    margin-bottom: 10px;
+    object-fit: cover;
+    animation: zoomInOut 2.5s ease-in-out infinite;
+   
+}
+
+
+@keyframes zoomInOut {
+
+    0%,
+    100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+       
+    }
+}
+
+
+.connect-btn:hover {
+    background-color: rgb(1, 97, 1);
+
+}
+
+.connect-btn {
+    background-color: green;
+    color: white;
+    padding: 7px 36px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.pending-btn {
+    background-color: gray;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.chat-btn {
+    background-color: darkblue;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 8px;
+}
+
+.accept-btn {
+    background-color: green;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.reject-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+} */
+
+
+
+/* .connect-container {
+    padding: 20px;
+}
+
+.connect-title {
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 700;
+    color: #4f46e5;
+}
+
+.connect-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.user-card {
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.2s ease;
+}
+
+.user-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.user-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.user-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #4f46e5;
+}
+
+.user-name {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.user-location {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+.user-skills {
+    background: #f9fafb;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+}
+
+.user-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.btn-connect,
+.btn-pending,
+.btn-chat,
+.btn-accept,
+.btn-reject {
+    flex: 1;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.btn-connect {
+    background: #4f46e5;
+    color: white;
+}
+
+.btn-connect:hover {
+    background: #4338ca;
+}
+
+.btn-pending {
+    background: #fbbf24;
+    color: white;
+}
+
+.btn-chat {
+    background: #10b981;
+    color: white;
+}
+
+.btn-accept {
+    background: #22c55e;
+    color: white;
+}
+
+.btn-reject {
+    background: #ef4444;
+    color: white;
+}
+
+.btn-group {
+    display: flex;
+    gap: 6px;
+} */

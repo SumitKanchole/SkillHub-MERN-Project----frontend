@@ -1,0 +1,101 @@
+
+.about-wrapper {
+    /* background: #d9fce3f8; */
+    background: linear-gradient(55deg, rgba(0, 128, 0, 0.377), rgba(255, 255, 255, 0.562));
+    min-height: 100vh;
+}
+
+.about-heading {
+    margin-top: 44px;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #2c3e50;
+}
+
+.underline {
+    position: relative;
+    display: inline-block;
+}
+
+.underline::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 3px;
+    background: #0a831a;
+    left: 0;
+    bottom: -5px;
+    border-radius: 2px;
+}
+
+.about-text {
+    font-size: 1.0rem;
+    line-height: 1.9;
+    color: #555;
+}
+
+.highlight {
+    color: #26bd00;
+    font-weight: 600;
+}
+
+.founder-quote {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+    color: #105a0a;
+    font-weight: bold;
+}
+
+.img-about1,
+.img-about2 {
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+
+/* Founder Image Size */
+.img-about2 {
+    max-width: 420px;
+    /* Limit the width */
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    margin: auto;
+    /* Center the image */
+}
+
+.img-about2.zoom-hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+.zoom-hover:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Fade-in animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+}
+
+.fade-in.delay {
+    animation-delay: 0.3s;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
