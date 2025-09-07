@@ -1,4 +1,4 @@
-export const BASE_URL = "http://localhost:3000"
+export const BASE_URL = "https://skillhub-mern-project-backend.onrender.com"
 export default {
     // user apis
     API_URL:BASE_URL,
