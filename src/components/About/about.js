@@ -9,7 +9,7 @@ function About() {
       <div className="about-wrapper">
         <div className="container py-5">
           
-          <div className="row align-items-center mb-5 fade-in">
+          <div className="row align-items-center mb-5">
             <div className="col-12 col-md-6 mb-4 mb-md-0">
               <h2 className="about-heading underline">About Us</h2>
               <p className="about-text">
@@ -29,7 +29,7 @@ function About() {
             </div>
           </div>
 
-          <div className="row align-items-center flex-column-reverse flex-md-row fade-in delay">
+          <div className="row align-items-center flex-column-reverse flex-md-row ">
             <div className="col-12 col-md-6 text-center mt-4 mt-md-0">
               <img src="assets/sumit.jpg" alt="Founder" className="img-fluid img-about2 zoom-hover" />
             </div>

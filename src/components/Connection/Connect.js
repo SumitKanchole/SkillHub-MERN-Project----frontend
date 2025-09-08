@@ -154,7 +154,7 @@ function ConnectPage() {
       
       <div className="container-fluid py-4 connect-page-container">
         {/* Header Section */}
-        <div className="connect-header">
+        <div className="connect-header justify-content-center text-center">
           <h1 className="connect-title">
             Discover & Connect
           </h1>

@@ -18,7 +18,8 @@ function Login() {
     try {
       event.preventDefault();
       if (state.email && state.password) {
-        let response = await axios.post(EndPoint.LOGIN, state,{withCredentials:true});
+        let response = await axios.post(EndPoint.LOGIN, state, { withCredentials: true });
+        console.log("response data : ", response.data);
         sessionStorage.setItem("current-user", JSON.stringify(response.data.user));
         toast.success(response.data.message);
 

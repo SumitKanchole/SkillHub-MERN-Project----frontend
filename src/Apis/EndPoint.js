@@ -12,3 +12,8 @@ export default {
     //contact apis
     ContactUs: BASE_URL + "/contact/sendquery",
 }
+
+
+//BACKEND_URL :-  https://skillhub-mern-project-backend.onrender.com
+
+//FRONTEND_URL :- https://skillhub-mern-project-frontend.onrender.com
