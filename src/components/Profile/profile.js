@@ -64,7 +64,7 @@ function ProfilePage() {
           <div className="row justify-content-center">
             <div className="col-12 col-lg-8 col-xl-6">
               
-              <div className="profile-main-card">
+              <div className="profile-main-card ">
                 
                 {/* Profile Header Section */}
                 <div className="profile-cover-section">

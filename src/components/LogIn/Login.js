@@ -98,12 +98,12 @@ function Login() {
                     </div>
 
 
-                    <div className="text-center mb-2 text-muted">OR</div>
+                    {/* <div className="text-center mb-2 text-muted">OR</div>
 
         <div className="google-btn w-100 d-flex align-items-center justify-content-center">
           <img src="/assets/google.png" alt="Google logo" className="google-logo me-2" />
           <span>Continue with Google</span>
-        </div>
+        </div> */}
 
 
                     <p className="text-center mt-3">

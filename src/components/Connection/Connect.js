@@ -273,7 +273,7 @@ function ConnectPage() {
                       <div className="text-center mb-3">
                         <div className="profile-image-container">
                           <img
-                            src={user.profileImage || "/assets/user.jpg"}
+                            src={user.profileImage || "assets/user.jpg"}
                             alt={user.name}
                             className="rounded-circle profile-image"
                             onError={(e) => {

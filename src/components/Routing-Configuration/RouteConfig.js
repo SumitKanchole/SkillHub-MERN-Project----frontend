@@ -8,6 +8,8 @@ import ForgetPassword from "../LogIn/ForgetPassword";
 import ConnectPage from "../Connection/Connect";
 import ChatPage from "../Connection/Chat";
 import ProfilePage from "../Profile/profile";
+import PostsPage from "../posts/PostsPage";
+import PrivacyPolicy from "../PrivacyPolicies/PrivacyPolicy";
 
 function RouteConfig() {
     return <>
@@ -21,6 +23,8 @@ function RouteConfig() {
             <Route path='connect' element={<ConnectPage/>} />
             <Route path='connect/chatPage' element={<ChatPage />} />
             <Route path='profile' element={<ProfilePage/>}/>
+            <Route path='post' element={<PostsPage/>}/>
+            <Route path='privacy' element={<PrivacyPolicy/>}/>
         </Routes>
     </>
 }

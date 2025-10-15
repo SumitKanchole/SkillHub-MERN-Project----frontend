@@ -79,6 +79,11 @@ function Header() {
               <li className="nav-item">
                 <Link className="nav-link text-white ml-2 navigate-design" to="/connect" onClick={closeNavbar}>Connect</Link>
               </li>
+            <li className="nav-item">
+              {isUserExist() &&
+                <Link className="nav-link text-white ml-2 navigate-design" to="/post" onClick={closeNavbar}>Posts</Link>
+              }
+              </li>
               
 
               <li className="nav-item">
