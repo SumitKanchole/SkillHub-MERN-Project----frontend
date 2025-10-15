@@ -52,7 +52,7 @@ function ChatPage() {
       setIsLoadingMessages(true);
       console.log(`📚 Fetching messages for room: ${roomId}`);
       
-      const response = await axios.get(`http://localhost:3000/chat/room/${roomId}/messages`, {
+      const response = await axios.get(`https://skillhub-mern-project-backend.onrender.com/chat/room/${roomId}/messages`, {
         withCredentials: true,
         timeout: 10000, // 10 second timeout
       });
@@ -120,7 +120,7 @@ function ChatPage() {
       fetchChatMessages(generatedRoomId);
 
       // Initialize Socket
-      socketRef.current = io("http://localhost:3000", {
+      socketRef.current = io("https://skillhub-mern-project-backend.onrender.com", {
         withCredentials: true,
         transports: ['websocket', 'polling'],
         timeout: 20000,
