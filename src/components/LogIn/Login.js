@@ -30,7 +30,7 @@ function Login() {
       }
     }
     catch (err) {
-      toast.error(err.response.data);
+      toast.error("Oops! something went wrong..");
     }
   }
   
